@@ -1,15 +1,14 @@
 package view;
-
+/**
+ * @author Wyldner
+ *
+ */
 public class Principal {
-
+	// ************ ESTOURAR STACK ************
 	public static void main(String[] args) {
 		double f;
 		f = 999999999;
-		
-		for(int i = 0; i < 999999999; i++) {
-			System.out.printf("%.0f\n", fato(f));
-		}
-		
+		fato(f);		
 	}
 
 	private static double fato(double f) {
