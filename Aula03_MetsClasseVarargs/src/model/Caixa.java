@@ -8,10 +8,11 @@ public class Caixa {
 		this.saldo = 100.0;
 	}
 	
-	
 // =======================================================================
 	public void venda(double valorProduto) {
 			this.saldo = this.saldo + valorProduto;
+			System.out.println("valor: " + this.saldo);
+			
 	}
 	
 // =======================================================================
