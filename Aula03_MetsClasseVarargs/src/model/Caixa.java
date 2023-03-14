@@ -5,22 +5,23 @@ public class Caixa {
 
 // =======================================================================	
 	public Caixa() {
-		this.saldo = 100.0;
+		this.saldo = 100.0;//chumbei pra diminuir o código
 	}
 	
 // =======================================================================
-	public void venda(double valorProduto) {
-			this.saldo = this.saldo + valorProduto;
-			System.out.println("valor: " + this.saldo);
-			
+	public double venda(double valorProduto) {
+			return this.saldo + valorProduto;			
 	}
 	
 // =======================================================================
-	public void venda(double... valorProduto) {
+	public double venda(double... valorProduto) {
+		double total = 0;
 		for(double cada: valorProduto) {
 			cada = cada + this.saldo;
 			System.out.println("valor: " + cada);
+			total = total + cada;
 		}
+		return total;// baseado no primeiro, mantive um retorno.
 	}	
 	
 // =======================================================================
